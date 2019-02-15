@@ -51,7 +51,7 @@ val counts = textFile.flatMap(line => line.split(" "))
 counts.saveAsTextFile("hdfs://...")
 ```
 
-    - R6. Dado um input de um external storage de um sistema distribuído, os mesmos são separados (pelos espaços) e transformados em uma sequência de caracteres (método flatMap). Feito isso, com essa sequência de caracteres são criados uma nova coleção do tipo chave/valor (tupla) sendo atribuido um valor (1) para cada chave (método map). Em seguida, é realizado a somatória de ocorrências pelo Spark (método reduceByKey) e, ao final, essa coleção é armazenada em um sistema distribuído.
+- R6. Dado um input de um external storage de um sistema distribuído, os mesmos são separados (pelos espaços) e transformados em uma sequência de caracteres (método flatMap). Feito isso, com essa sequência de caracteres são criados uma nova coleção do tipo chave/valor (tupla) sendo atribuido um valor (1) para cada chave (método map). Em seguida, é realizado a somatória de ocorrências pelo Spark (método reduceByKey) e, ao final, essa coleção é armazenada em um sistema distribuído.
 
 * Q7. Responda as seguintes questôes. Devem ser desenvolvidas em Spark utilizando a sua linguagem de preferência.
 
