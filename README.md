@@ -9,7 +9,7 @@ Dataset oficial: https://ita.ee.lbl.gov/html/contrib/NASA-HTTP.html
 É necessário instalar o Spark em um ambiente de sua preferência.
 O teste foi criado e executado em um ambiente Linux (Mint 18).
 
-Mais informações:
+Maiores informações:
 * [Install Spark on Ubuntu (PySpark)] (https://medium.com/@GalarnykMichael/install-spark-on-ubuntu-pyspark-231c45677de0)
 
 * Caso faça o clone e queira rodar o script, é necessário baixar e extrair os seguintes datasets na pasta 'data' do projeto:
