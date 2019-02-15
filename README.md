@@ -13,8 +13,8 @@ Mais informações:
 * [Install Spark on Ubuntu (PySpark)] (https://medium.com/@GalarnykMichael/install-spark-on-ubuntu-pyspark-231c45677de0)
 
 * Caso faça o clone e queira rodar o script, é necessário baixar e extrair os seguintes datasets na pasta 'data' do projeto:
-- [NASA_access_log_Jul95.gz] (ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz)
-- [NASA_access_log_Aug95.gz] (ftp://ita.ee.lbl.gov/traces/NASA_access_log_Aug95.gz)
+    - [NASA_access_log_Jul95.gz] (ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz)
+    - [NASA_access_log_Aug95.gz] (ftp://ita.ee.lbl.gov/traces/NASA_access_log_Aug95.gz)
 
 * Para rodar o script python no terminal:
 ```
@@ -51,7 +51,7 @@ val counts = textFile.flatMap(line => line.split(" "))
 counts.saveAsTextFile("hdfs://...")
 ```
 
-- R6. Dado um input de um external storage de um sistema distribuído, os mesmos são separados (pelos espaços) e transformados em uma sequência de caracteres (método flatMap). Feito isso, com essa sequência de caracteres são criados uma nova coleção do tipo chave/valor (tupla) sendo atribuido um valor (1) para cada chave (método map). Em seguida, é realizado a somatória de ocorrências pelo Spark (método reduceByKey) e, ao final, essa coleção é armazenada em um sistema distribuído.
+   - R6. Dado um input de um external storage de um sistema distribuído, os mesmos são separados (pelos espaços) e transformados em uma sequência de caracteres (método flatMap). Feito isso, com essa sequência de caracteres são criados uma nova coleção do tipo chave/valor (tupla) sendo atribuido um valor (1) para cada chave (método map). Em seguida, é realizado a somatória de ocorrências pelo Spark (método reduceByKey) e, ao final, essa coleção é armazenada em um sistema distribuído.
 
 * Q7. Responda as seguintes questôes. Devem ser desenvolvidas em Spark utilizando a sua linguagem de preferência.
 
